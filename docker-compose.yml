@@ -5,6 +5,9 @@ services:
     container_name: focalboard-live
     ports:
       - 4280:8000
+    volumes:
+      - ./data:/data
     environment:
       - VIRTUAL_HOST=focalboard.local
       - VIRTUAL_PORT=8000
+    restart: unless-stopped
