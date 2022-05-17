@@ -13,7 +13,7 @@ sudo chown -R nobody data
 Run the compose
 
 ```
-docker-compose up
+docker-compose up -d
 ```
 
 You are now running focalboard on port `4280`
